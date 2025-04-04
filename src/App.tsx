@@ -52,7 +52,7 @@ function App() {
           }
           
           .parchmentContainer.animated {
-            animation: customParchmentAppear 2.8s ease-out forwards;
+            animation: customParchmentAppear 3.2s ease-out forwards;
           }
         `;
         document.head.appendChild(styleEl);
@@ -221,9 +221,10 @@ function App() {
       </div>
 
       <div className={`mainContent ${contentVisible ? 'visible' : 'hidden'}`}>
+      {/* <div className='mainContent visible'> */}
       <Layout >
         <div className='mainContainer'>
-          <h1>XV Años Celebration</h1>
+          <h1>Como cuento de hadas,<br/> en un reino no muy lejano,<br/> viv&iacute;a una princesa llamada</h1>
           <div >
             <div>
               <a href="https://vite.dev" target="_blank">

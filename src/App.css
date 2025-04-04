@@ -7,9 +7,14 @@
   text-align: center;
   --final-scale: 2.35;
   --final-transy-top: -200px;
+  --parchment-color: rgb(237, 234, 229);
 }
+
 body{
-  background-color: #d0cfc6;
+  background-size: cover;
+  background-color: rgb(194 181 165);
+  background-repeat: no-repeat;
+  background-image: url('./assets/background_pergamino2.avif');
 }
 
 .logo {
@@ -169,7 +174,7 @@ body{
   --width: 100%;
   width: 100%;
   height: calc(var(--width) * 0.8);
-  background-color: #fff;
+  background-color: var(--parchment-color);
   -webkit-box-shadow: inset 0px -9px 30px -3px rgba(0,0,0,0.15);
   -moz-box-shadow: inset 0px -9px 30px -3px rgba(0,0,0,0.15);
   box-shadow: inset 0px -9px 30px -3px rgba(0,0,0,0.15);
@@ -204,7 +209,7 @@ body{
 }
 
 .parchmentBodyContent{
-  background-color: #ffffff;
+  background-color: var(--parchment-color);
   widows: 100%;
   position: absolute;
   top: 28%;
@@ -246,7 +251,7 @@ body{
     opacity: 1;
   }
   100% {
-    /* opacity: 0; */
+    opacity: 0;
     transform: scale(var(--final-scale, 2.35));
     display: none;
   }
@@ -254,8 +259,10 @@ body{
 
 
 .mainContent {
-  transition: opacity 1s ease-in;
+  transition: opacity 3s ease-in-out;
   width: 100%;
+  display: none;
+  opacity: 0;
 }
 
 .mainContent.visible {
@@ -263,8 +270,13 @@ body{
   display: block;
 }
 
-.mainContent.hidden {
+.mainContainer {
+  font-family: cursive;
+  color: var(--font-color);
+}
+
+/* .mainContent.hidden {
   opacity: 0;
   display: none;
-}
+} */
 

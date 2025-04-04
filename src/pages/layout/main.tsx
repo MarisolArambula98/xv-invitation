@@ -47,9 +47,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       
-      <footer className="fancy-footer">
+      {/* <footer className="fancy-footer">
         <p>© {new Date().getFullYear()} - XV Invitation</p>
-      </footer>
+      </footer> */}
     </div>
   );
 };
