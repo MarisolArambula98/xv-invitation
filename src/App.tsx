@@ -5,6 +5,7 @@ import './App.css'
 import headImg from './assets/cabeza_pergamino2.png'
 import Layout from './pages/layout/main'
 
+
 function App() {
   const [count, setCount] = useState(0)
   const [contentVisible, setContentVisible] = useState(false)
@@ -224,7 +225,7 @@ function App() {
       {/* <div className='mainContent visible'> */}
       <Layout >
         <div className='mainContainer'>
-          <h1>Como cuento de hadas,<br/> en un reino no muy lejano,<br/> viv&iacute;a una princesa llamada</h1>
+          <h1>Como cuento de hadas,<br/> en un reino no muy lejano,<br/> viv&iacute;a una princesa llamada  LA</h1>
           <div >
             <div>
               <a href="https://vite.dev" target="_blank">
