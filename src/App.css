@@ -7,13 +7,20 @@
   text-align: center;
   --final-scale: 2.35;
   --final-transy-top: -200px;
-  --parchment-color: rgb(237, 234, 229);
+  /* --parchment-color: rgb(237, 234, 229); */
+  --parchment-color: rgb(211, 200, 165);
+  --parchment-body-width: 90vw;
+  --parchment-head-width: 80px;
+  --parchment-animation-duration: 3s;
+  --parchment-width: var(var(--parchment-body-width) + var(--parchment-head-width));
 }
 
-body{
-  background-size: cover;
+body {
+  background-size: 100vw 100vh;
   background-color: rgb(194 181 165);
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
   background-image: url('./assets/background_pergamino2.avif');
 }
 
@@ -66,6 +73,7 @@ body{
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out; */
 }
+
 .animationTest:hover{
   color:aqua;
   font-size: 30px;
@@ -234,3 +242,9 @@ body{
   display: none;
 } */
 
+.parchment__container {
+  /* top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%); */
+}
