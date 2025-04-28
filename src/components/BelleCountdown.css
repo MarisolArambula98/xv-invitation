@@ -1,0 +1,1009 @@
+/* Import Belle-themed fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Belle theme colors */
+:root {
+  --belle-yellow: #f9d77e;
+  --belle-gold: #d4af37;
+  --belle-dark-gold: #b8860b;
+  --belle-blue: #4169e1;
+  --belle-dress-yellow: #f8e58c;
+  --belle-rose: #cc0033;
+  --belle-dark-rose: #8b0000;
+  --belle-brown: #8b4513;
+  --belle-cream: #fef8e8;
+  --belle-light-cream: #fffaf0;
+  --belle-green: #006400;
+  --belle-light-green: #228b22;
+  --beast-blue: #1e3a8a;
+  --beast-cape: #800020;
+  --glass-color: rgba(200, 230, 255, 0.4);
+  --candle-yellow: #ffeb99;
+  --flame-orange: #ff9933;
+  --teacup-white: #f5f5f5;
+}
+
+.belle-countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem 6rem;
+  background: linear-gradient(135deg, var(--belle-cream) 0%, var(--belle-light-cream) 100%);
+  border-radius: 20px;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 0 0 2px var(--belle-gold),
+    0 0 0 10px var(--belle-cream),
+    0 0 30px rgba(212, 175, 55, 0.3);
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  z-index: 1;
+}
+
+.belle-countdown-container.animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.belle-countdown-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M30,10 Q50,0 70,10 Q90,20 90,40 Q90,60 70,70 Q50,80 30,70 Q10,60 10,40 Q10,20 30,10 Z" fill="none" stroke="%23d4af37" stroke-width="1" opacity="0.2"/></svg>');
+  background-size: 100px 100px;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+/* Belle Silhouette Animation */
+.belle-silhouette {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  width: 80px;
+  height: 150px;
+  z-index: 10;
+  transform-origin: bottom center;
+  animation: belleWaltz 10s infinite alternate ease-in-out;
+}
+
+.belle-dress {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 60px;
+  height: 90px;
+  background-color: var(--belle-dress-yellow);
+  border-radius: 30px 30px 0 0;
+  clip-path: polygon(0 30%, 100% 30%, 100% 100%, 0 100%);
+  box-shadow: 0 0 10px rgba(249, 215, 126, 0.5);
+  animation: dressGlow 3s infinite alternate;
+}
+
+.belle-dress::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 50%);
+  border-radius: 30px 30px 0 0;
+}
+
+.belle-head {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  width: 30px;
+  height: 30px;
+  background-color: #f5d0b0;
+  border-radius: 50%;
+}
+
+.belle-hair {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #8b4513;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transform: rotate(5deg);
+}
+
+.belle-arm {
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background-color: #f5d0b0;
+  border-radius: 5px;
+}
+
+.belle-arm.left {
+  top: 45px;
+  left: 15px;
+  transform: rotate(15deg);
+}
+
+.belle-arm.right {
+  top: 45px;
+  right: 15px;
+  transform: rotate(-15deg);
+}
+
+.belle-book {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  width: 20px;
+  height: 15px;
+  background-color: #8b4513;
+  border-radius: 2px;
+  transform: rotate(-10deg);
+}
+
+/* Beast Silhouette Animation */
+.beast-silhouette {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  width: 100px;
+  height: 180px;
+  z-index: 10;
+  transform-origin: bottom center;
+  animation: beastWaltz 10s infinite alternate ease-in-out;
+}
+
+.beast-head {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 40px;
+  height: 50px;
+  background-color: var(--beast-blue);
+  border-radius: 20px 20px 10px 10px;
+}
+
+.beast-head::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    width: 30px;
+    height: 20px;
+    background-color: var(--beast-blue);
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .beast-body {
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    width: 50px;
+    height: 80px;
+    background-color: var(--beast-blue);
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .beast-cape {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    width: 70px;
+    height: 100px;
+    background-color: var(--beast-cape);
+    border-radius: 10px 10px 30px 30px;
+    z-index: -1;
+    transform-origin: top center;
+    animation: capeFlow 4s infinite ease-in-out;
+  }
+  
+  .beast-arm {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    width: 15px;
+    height: 50px;
+    background-color: var(--beast-blue);
+    border-radius: 7px;
+    transform: rotate(15deg);
+    transform-origin: top center;
+    animation: armMove 3s infinite alternate;
+  }
+  
+  /* Enchanted Rose */
+  .enchanted-rose-container {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 150px;
+    z-index: 20;
+}
+  
+  .glass-dome {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 80px;
+    height: 120px;
+    background-color: var(--glass-color);
+    border-radius: 40px 40px 10px 10px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 
+      inset 0 0 20px rgba(255, 255, 255, 0.5),
+      0 0 15px rgba(255, 255, 255, 0.5);
+    animation: glassGlow 4s infinite alternate;
+    opacity: 0.8;
+  }
+  
+  .rose-stem {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 3px;
+    height: 80px;
+    background-color: var(--belle-green);
+    z-index: 1;
+  }
+  
+  .rose-flower {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+    animation: roseGlow 3s infinite alternate;
+  }
+  
+  .rose-petal {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--belle-rose);
+    border-radius: 50% 0 50% 50%;
+    transform-origin: bottom right;
+  }
+  
+  .petal-1 { transform: rotate(0deg) translateX(0px); }
+  .petal-2 { transform: rotate(72deg) translateX(0px); }
+  .petal-3 { transform: rotate(144deg) translateX(0px); }
+  .petal-4 { transform: rotate(216deg) translateX(0px); }
+  .petal-5 { transform: rotate(288deg) translateX(0px); }
+  
+  .falling-petal {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--belle-rose);
+    border-radius: 50% 0 50% 50%;
+    opacity: 0.8;
+    animation: fallingPetal 5s linear infinite;
+  }
+  
+  .rose-base {
+    position: absolute;
+    bottom: 20px;
+    left: 4px;
+    width: 95px;
+    height: 10px;
+    background-color: var(--belle-dark-gold);
+    border-radius: 5px;
+    z-index: 1;
+    }
+  
+  /* Dancing Objects */
+  .dancing-objects {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 5;
+  }
+  
+  /* Mrs. Potts */
+  .teacup {
+    position: relative;
+    transform-origin: bottom center;
+  }
+  
+  .teacup.mrs-potts {
+    width: 60px;
+    height: 50px;
+    animation: teacupDance 4s infinite alternate;
+  }
+  
+  .teacup-body {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 40px;
+    height: 30px;
+    background-color: var(--teacup-white);
+    border-radius: 20px 20px 10px 10px;
+    border: 2px solid var(--belle-gold);
+  }
+  
+  .teacup-lid {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 30px;
+    height: 10px;
+    background-color: var(--teacup-white);
+    border-radius: 50% 50% 0 0;
+    border: 2px solid var(--belle-gold);
+    border-bottom: none;
+  }
+  
+  .teacup-spout {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 20px;
+    height: 15px;
+    background-color: var(--teacup-white);
+    border: 2px solid var(--belle-gold);
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-30deg);
+  }
+  
+  .teacup-handle {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 15px;
+    height: 20px;
+    border: 2px solid var(--belle-gold);
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+  }
+  
+  .teacup-face {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 20px;
+    height: 15px;
+    z-index: 2;
+  }
+  
+  .teacup-face::before, .teacup-face::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 50%;
+    animation: blinking 3s infinite;
+  }
+  
+  .teacup-face::before {
+    left: 2px;
+  }
+  
+  .teacup-face::after {
+    right: 2px;
+  }
+  
+  /* Chip */
+  .teacup.chip {
+    width: 30px;
+    height: 25px;
+    animation: chipHop 2s infinite alternate;
+  }
+  
+  .teacup-body.small {
+    width: 25px;
+    height: 20px;
+    left: 2px;
+  }
+  
+  .teacup-body.small::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid var(--belle-gold);
+  }
+  
+  .teacup-face.small {
+    top: 8px;
+    left: 10px;
+    width: 10px;
+    height: 8px;
+  }
+  
+  .teacup-face.small::before, .teacup-face.small::after {
+    width: 3px;
+    height: 3px;
+  }
+  
+  /* Lumiere */
+  .candelabra {
+    position: relative;
+    width: 50px;
+    height: 70px;
+    animation: lumiereDance 5s infinite;
+  }
+  
+  .candelabra-base {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: 20px;
+    height: 40px;
+    background-color: var(--belle-gold);
+    border-radius: 5px 5px 10px 10px;
+  }
+  
+  .candelabra-arm {
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    background-color: var(--belle-gold);
+    border-radius: 5px;
+  }
+  
+  .candelabra-arm.left {
+    top: 15px;
+    left: 5px;
+    transform: rotate(-30deg);
+  }
+  
+  .candelabra-arm.right {
+    top: 15px;
+    right: 5px;
+    transform: rotate(30deg);
+  }
+  
+  .candelabra-face {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    width: 20px;
+    height: 15px;
+    z-index: 2;
+  }
+  
+  .candelabra-face::before, .candelabra-face::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 50%;
+    animation: blinking 4s infinite;
+  }
+  
+  .candelabra-face::before {
+    left: 2px;
+  }
+  
+  .candelabra-face::after {
+    right: 2px;
+  }
+  
+  .candle {
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    background-color: var(--candle-yellow);
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .candle.main {
+    top: 0;
+    left: 20px;
+  }
+  
+  .candle.left {
+    top: 5px;
+    left: 5px;
+    transform: rotate(-20deg);
+  }
+  
+  .candle.right {
+    top: 5px;
+    right: 5px;
+    transform: rotate(20deg);
+  }
+  
+  .flame {
+    position: absolute;
+    top: -15px;
+    left: 2px;
+    width: 6px;
+    height: 15px;
+    background-color: var(--flame-orange);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    box-shadow: 0 0 10px var(--flame-orange), 0 0 20px rgba(255, 153, 51, 0.5);
+    animation: flameFlicker 0.5s infinite alternate;
+  }
+  
+  /* Title Styles */
+  .belle-countdown-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .belle-countdown-title h2 {
+    font-family: 'Great Vibes', cursive;
+    color: var(--belle-dark-rose);
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .magic-text {
+    background: linear-gradient(45deg, var(--belle-dark-rose), var(--belle-gold), var(--belle-dark-rose));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textShine 3s linear infinite;
+  }
+  
+  .belle-countdown-title p {
+    font-family: 'Dancing Script', cursive;
+    color: var(--belle-brown);
+    font-size: 1.6rem;
+    position: relative;
+  }
+  
+  .belle-countdown-title p::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--belle-gold), transparent);
+  }
+  
+  /* Timer Styles */
+  .belle-countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .countdown-value {
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: var(--belle-dark-rose);
+    background: linear-gradient(135deg, var(--belle-light-cream) 0%, #ffffff 100%);
+    border: 2px solid var(--belle-gold);
+    border-radius: 12px;
+    padding: 0.5rem;
+    box-shadow: 
+      0 5px 15px rgba(0, 0, 0, 0.1),
+      inset 0 0 10px rgba(212, 175, 55, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .countdown-value::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 50%);
+    z-index: 1;
+  }
+  
+  .countdown-digit {
+    font-size: 2.5rem;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: digitPop 0.5s ease forwards;
+    transform: scale(0);
+  }
+  
+  .countdown-separator {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--belle-dark-gold);
+    margin: 0 -0.2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: separatorPulse 2s infinite;
+  }
+  
+  .countdown-label {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    color: var(--belle-brown);
+    margin-top: 0.8rem;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  .countdown-decoration {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--belle-gold), transparent);
+  }
+  
+  /* Sparkles */
+  .belle-sparkles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+  .sparkle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: var(--belle-gold);
+    border-radius: 50%;
+    opacity: 0;
+    animation: sparkle 5s infinite;
+  }
+  
+  .sparkle::before, .sparkle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--belle-gold);
+    border-radius: 50%;
+  }
+  
+  .sparkle::before {
+    transform: translate(-50%, -50%) rotate(45deg) scale(0.7);
+  }
+  
+  .sparkle::after {
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.4);
+  }
+  
+  /* Belle Quote */
+  .belle-quote {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    color: var(--belle-dark-gold);
+    font-size: 1.5rem;
+    position: relative;
+    padding: 0 1rem;
+    z-index: 1;
+  }
+  
+  .belle-quote::before, .belle-quote::after {
+    content: """;
+    position: absolute;
+    font-size: 3rem;
+    color: rgba(212, 175, 55, 0.3);
+  }
+  
+  .belle-quote::before {
+    top: -20px;
+    left: 0;
+  }
+  
+  .belle-quote::after {
+    content: """;
+    bottom: -40px;
+    right: 0;
+  }
+  
+  /* Ballroom Floor */
+  .ballroom-floor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.3));
+    z-index: 0;
+  }
+  
+  .ballroom-floor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 50% 50%, var(--belle-gold) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+  }
+  
+  /* Animations */
+  @keyframes digitPop {
+    0% { transform: scale(0); opacity: 0; }
+    60% { transform: scale(1.2); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes separatorPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  @keyframes textShine {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+  
+  @keyframes sparkle {
+    0% { transform: scale(0); opacity: 0; }
+    20% { transform: scale(1); opacity: 1; }
+    40% { transform: scale(0.8); opacity: 0.8; }
+    70% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(0); opacity: 0; }
+  }
+  
+  @keyframes glassGlow {
+    0% { box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3); }
+    100% { box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5); }
+  }
+  
+  @keyframes roseGlow {
+    0% { filter: drop-shadow(0 0 3px rgba(204, 0, 51, 0.5)); }
+    100% { filter: drop-shadow(0 0 8px rgba(204, 0, 51, 0.8)); }
+  }
+  
+  @keyframes fallingPetal {
+    0% { 
+      transform: translateY(0) rotate(0deg); 
+      opacity: 0.8; 
+    }
+    50% { 
+      transform: translateY(50px) rotate(180deg) translateX(20px); 
+      opacity: 0.6; 
+    }
+    100% { 
+      transform: translateY(100px) rotate(360deg) translateX(-20px); 
+      opacity: 0; 
+    }
+  }
+  
+  @keyframes belleWaltz {
+    0% { transform: translateX(0) rotate(0deg); }
+    25% { transform: translateX(20px) rotate(5deg); }
+    50% { transform: translateX(40px) rotate(-5deg); }
+    75% { transform: translateX(20px) rotate(5deg); }
+    100% { transform: translateX(0) rotate(0deg); }
+  }
+  
+  @keyframes beastWaltz {
+    0% { transform: translateX(0) rotate(0deg); }
+    25% { transform: translateX(-20px) rotate(-5deg); }
+    50% { transform: translateX(-40px) rotate(5deg); }
+    75% { transform: translateX(-20px) rotate(-5deg); }
+    100% { transform: translateX(0) rotate(0deg); }
+  }
+  
+  @keyframes capeFlow {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  @keyframes armMove {
+    0% { transform: rotate(15deg); }
+    100% { transform: rotate(30deg); }
+  }
+  
+  @keyframes teacupDance {
+    0% { transform: translateX(0) rotate(0deg); }
+    25% { transform: translateX(10px) rotate(5deg); }
+    50% { transform: translateX(0) rotate(-5deg); }
+    75% { transform: translateX(-10px) rotate(5deg); }
+    100% { transform: translateX(0) rotate(0deg); }
+  }
+  
+  @keyframes chipHop {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  @keyframes lumiereDance {
+    0% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-5px) rotate(5deg); }
+    50% { transform: translateY(0) rotate(-5deg); }
+    75% { transform: translateY(-5px) rotate(5deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+  }
+  
+  @keyframes flameFlicker {
+    0% { 
+      height: 15px; 
+      opacity: 0.9;
+      box-shadow: 0 0 10px var(--flame-orange), 0 0 20px rgba(255, 153, 51, 0.5);
+    }
+    100% { 
+      height: 12px; 
+      opacity: 1;
+      box-shadow: 0 0 8px var(--flame-orange), 0 0 16px rgba(255, 153, 51, 0.4);
+    }
+  }
+  
+  @keyframes blinking {
+    0%, 45%, 55%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(0.1); }
+  }
+  
+  @keyframes dressGlow {
+    0% { box-shadow: 0 0 10px rgba(249, 215, 126, 0.5); }
+    100% { box-shadow: 0 0 20px rgba(249, 215, 126, 0.8); }
+  }
+  
+  /* Flipping animation for seconds */
+  @keyframes flipDigit {
+    0% { transform: rotateX(0); }
+    50% { transform: rotateX(90deg); }
+    100% { transform: rotateX(0); }
+  }
+  
+  .countdown-item:last-child .countdown-digit {
+    animation: digitPop 0.5s ease forwards, flipDigit 1s ease-in-out infinite;
+    animation-delay: 0.5s, 1s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .belle-countdown-container {
+      padding: 3rem 1rem 5rem;
+    }
+    
+    .belle-countdown-title h2 {
+      font-size: 2.5rem;
+    }
+    
+    .belle-countdown-title p {
+      font-size: 1.3rem;
+    }
+    
+    .belle-countdown-timer {
+      flex-wrap: wrap;
+      gap: 1rem 0.3rem;
+    }
+    
+    .countdown-digit {
+      font-size: 2rem;
+      width: 1.3em;
+    }
+    
+    .countdown-separator {
+      font-size: 2rem;
+      margin: 0 -0.3rem;
+    }
+    
+    .countdown-label {
+      font-size: 1.1rem;
+    }
+    
+    .belle-quote {
+      font-size: 1.3rem;
+    }
+    
+    .belle-silhouette {
+      transform: scale(0.8);
+      left: 30px;
+    }
+    
+    .beast-silhouette {
+      transform: scale(0.8);
+      right: 30px;
+    }
+    
+    .enchanted-rose-container {
+      transform: translateX(-50%) scale(0.8);
+    }
+    
+    .dancing-objects {
+      transform: scale(0.8);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .belle-countdown-container {
+      padding: 2.5rem 0.5rem 4rem;
+    }
+    
+    .belle-countdown-title h2 {
+      font-size: 2rem;
+    }
+    
+    .belle-countdown-title p {
+      font-size: 1.1rem;
+    }
+    
+    .countdown-digit {
+      font-size: 1.8rem;
+      width: 1.2em;
+    }
+    
+    .countdown-separator {
+      font-size: 1.8rem;
+    }
+    
+    .countdown-label {
+      font-size: 1rem;
+    }
+    
+    .belle-quote {
+      font-size: 1.1rem;
+    }
+    
+    .belle-silhouette {
+      transform: scale(0.6);
+      left: 20px;
+      bottom: 20px;
+    }
+    
+    .beast-silhouette {
+      transform: scale(0.6);
+      right: 20px;
+      bottom: 20px;
+    }
+    
+    .enchanted-rose-container {
+      transform: translateX(-50%) scale(0.7);
+    }
+    
+    .dancing-objects {
+      transform: scale(0.6);
+    }
+  }
+  
+  

@@ -1,10 +1,7 @@
 import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import headImg from './assets/cabeza_pergamino2.png'
-import Layout from './pages/layout/main'
 import Parchment from './components/parchment/Parchment'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,7 +20,7 @@ function App() {
   //     const newYTop = (baseYTop * ratio2) * (-0.8) - (window.innerWidth > 769  ? 50 : window.innerWidth < 460 ? 100 : 0) ;
   //     const newYBottom = (baseYTop * ratio2) * (0.8) ;
   //     const newScaleY = baseScaley * ratio2 + (window.innerWidth < 460  ? 3 : 0);
-      
+  
   //     // Instead of setting a CSS variable, apply the animation directly
   //     const parchmentContainer = document.querySelector('.parchmentContainer');
 
