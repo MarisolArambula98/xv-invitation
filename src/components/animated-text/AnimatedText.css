@@ -1,0 +1,24 @@
+#Text {
+  width: 70%;
+  stroke-linecap: round;
+  stroke-dasharray: 3547;
+  animation: fillSvg 20s forwards;
+  stroke: #d9560b;
+  stroke-width:0.5mm;
+  /* fill:#7d4705 */
+}
+
+#Text path {
+  /* stroke: #39aae6; */
+  stroke:#d9a20b;
+  /* stroke: #d9560b; */
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes fillSvg {
+  0% {
+    stroke-dashoffset: 3547;
+  } 100% {
+    stroke-dashoffset: 0;
+  }
+}

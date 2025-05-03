@@ -10,6 +10,8 @@
 .parchment__content {
     background: var(--parchment-color);
     width: var(--parchment-body-width);
+    /* border: solid 1px rgb(211, 200, 165); */
+    box-shadow: rgb(211, 200, 165) 0px 4px 16px, rgb(211, 200, 165) 0px 8px 32px;
 }
 
 .parchment.opened .parchment__main {
@@ -22,11 +24,20 @@
 .parchment__main {
     opacity: 0;
     display: none;
-    padding: 100px 1rem;
+    padding: 50px 5vw;
 }
 
 .parchment.opened .parchment__head {
     display: none;
+}
+
+#Banner {
+    width: 45vw;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
 }
 
 @keyframes parchment-opened {

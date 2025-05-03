@@ -37,7 +37,6 @@
     0 0 0 2px var(--belle-gold),
     0 0 0 10px var(--belle-cream),
     0 0 30px rgba(212, 175, 55, 0.3);
-  max-width: 800px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -48,7 +47,7 @@
 }
 
 .belle-countdown-container.animate {
-  transform: translateY(0);
+  /* transform: translateY(0); */
   opacity: 1;
 }
 
@@ -552,7 +551,7 @@
   .belle-countdown-title h2 {
     font-family: 'Great Vibes', cursive;
     color: var(--belle-dark-rose);
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;

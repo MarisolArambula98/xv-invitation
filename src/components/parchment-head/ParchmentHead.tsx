@@ -7,9 +7,7 @@ function ParchmentHead({classes}: {classes: string}) {
         <div className="parchment__img">
             <img src={headImg} alt="cabeza pergamino" />
         </div>
-        <div className="parchment__body">
-            
-        </div>
+        <div className="parchment__body"></div>
         <div className="parchment__img reverse">
             <img src={headImg} alt="cabeza pergamino" />
         </div>

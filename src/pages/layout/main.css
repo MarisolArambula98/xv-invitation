@@ -104,11 +104,7 @@ html, body {
   /* Content Area */
   .content-area {
     flex: 1;
-    padding-top: 30px; /* Space for fixed menu */
-    min-height: calc(100vh - 30px); /* Subtract header height */
     position: relative;
-    overflow-y: auto;
-    overflow-x: hidden;
     background-color: var(--parchment-color);
   }
   

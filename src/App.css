@@ -8,7 +8,9 @@
   --final-scale: 2.35;
   --final-transy-top: -200px;
   /* --parchment-color: rgb(237, 234, 229); */
-  --parchment-color: rgb(211, 200, 165);
+  /* --parchment-color: rgb(211, 200, 165);
+ */
+  --parchment-color: rgb(255 249 237);
   --parchment-body-width: 90vw;
   --parchment-head-width: 80px;
   --parchment-animation-duration: 3s;

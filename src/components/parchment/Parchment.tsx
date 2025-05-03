@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react';
 import ParchmentHead from '../parchment-head/ParchmentHead';
 import './Parchment.css'
 import Layout from '../../pages/layout/main';
-import Banner from '../../assets/banner.svg'
+import Banner from '../../assets/BannerInvitacion.png';
 import BelleCountdown from '../BelleCountdown'
-
+import AnimatedText from '../animated-text/AnimatedText';
+import Gallery from '../gallery/Gallery';
 
 function Parchment() {
     const [parchmentOpened, setParchmentOpened] = useState(false);
-    const celebrationDate = new Date('2025-07-07T21:00:00') // Change to your actual date
+    const celebrationDate = new Date('2025-06-07T21:00:00') // Change to your actual date
 
     useEffect(() => {
 
@@ -25,32 +26,18 @@ function Parchment() {
             <div className="parchment__content">
                     <div className="parchment__main">
                         <Layout>
-                            <img src={Banner} alt="banner" />
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
-                            <h1>Habia una vez en un cuento de hadas, una princesa llamada Leslie</h1>
+                            <img src={Banner} alt="banner" id='Banner' />
+                            <h1>Como cuento de hadas, en un reino no muy lejano, vivia una princesa llamada</h1>
+                            <AnimatedText />
+
                             <div className="belle-countdown-section">
                                 <BelleCountdown targetDate={celebrationDate} />
                             </div>
-                            
-                            {/* You can add more Belle-themed content here */}
-                            <div className="belle-invitation-message">
-                            <p>Te invito a ser parte de mi historia de XV años</p>
-                            <p>Donde cada momento será tan mágico como un cuento de hadas</p>
+
+                            <div className="gallery-sectio">
+                                <Gallery/>
                             </div>
+   
                         </Layout>
                     </div>
             </div>
