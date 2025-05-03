@@ -722,7 +722,7 @@
   }
   
   .belle-quote::before, .belle-quote::after {
-    content: """;
+    content: "";
     position: absolute;
     font-size: 3rem;
     color: rgba(212, 175, 55, 0.3);
@@ -734,7 +734,7 @@
   }
   
   .belle-quote::after {
-    content: """;
+    content: "";
     bottom: -40px;
     right: 0;
   }

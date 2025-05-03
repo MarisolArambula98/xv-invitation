@@ -6,6 +6,7 @@ import Banner from '../../assets/BannerInvitacion.png';
 import BelleCountdown from '../BelleCountdown'
 import AnimatedText from '../animated-text/AnimatedText';
 import Gallery from '../gallery/Gallery';
+import Location from '../location/Location';
 
 function Parchment() {
     const [parchmentOpened, setParchmentOpened] = useState(false);
@@ -36,6 +37,10 @@ function Parchment() {
 
                             <div className="gallery-sectio">
                                 <Gallery/>
+                            </div>
+
+                            <div className="location__section">
+                                <Location/>
                             </div>
    
                         </Layout>
