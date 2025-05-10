@@ -32,12 +32,56 @@
 }
 
 #Banner {
-    width: 45vw;
+    width: 30vw;
 }
 
 h1 {
     margin: 0;
     font-size: 3rem;
+}
+
+.parchment .letter-section {
+    width: 50%;
+    margin: 3rem auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.parchment .letter-section > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.parchment .letter-section img {
+    /* width: 30vw; */
+    /* margin-right: -1.5vw; */
+    /* max-width: 150px; */
+    left: 0;
+    filter: brightness(0.5);
+    position: absolute;
+}
+
+.parchment .letter-section svg {
+    width: 100%;
+    height: auto;
+    padding-left: 120px;
+    padding-bottom: 1rem;
+}
+
+.parchment .letter-section > div:first-child svg {
+    padding-left: 130px;
+}
+
+.parchment .letter-section path {
+    stroke: #442509;
+    fill: #442509;
+}
+
+.parchment .letter-section span {
+    color: black;
 }
 
 @keyframes parchment-opened {

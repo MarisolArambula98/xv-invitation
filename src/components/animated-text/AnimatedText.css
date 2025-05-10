@@ -1,10 +1,11 @@
 #Text {
-  width: 70%;
+  width: 90%;
   stroke-linecap: round;
   stroke-dasharray: 3547;
   animation: fillSvg 20s forwards;
   stroke: #d9560b;
   stroke-width:0.5mm;
+  margin: 2rem 0;
   /* fill:#7d4705 */
 }
 

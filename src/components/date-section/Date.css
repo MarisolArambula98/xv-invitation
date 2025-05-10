@@ -1,0 +1,27 @@
+.date__container {
+    position: relative;
+}
+
+.date__container .day-name {
+    transform: rotate(270deg)
+}
+
+.date__container .castle {
+    left: 0;
+    width: 100%;
+    opacity: 0.15;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.date__container .date-details {
+    display: flex;
+}
+
+.date__container .month-name {
+    color: blue;
+}
+
+.date__container .day {
+    font-size: 10vw;
+}

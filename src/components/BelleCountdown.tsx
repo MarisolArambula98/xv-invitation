@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './BelleCountdown.css';
+import Beauty from '../assets/unnamed.png';
 
 interface CountdownProps {
   targetDate: Date;
@@ -85,6 +86,10 @@ const BelleCountdown: React.FC<CountdownProps> = ({ targetDate }) => {
           ></div>
         ))}
       </div>
+
+      {/* <div className='enchanted-rose-container'>
+        <img src={Beauty} width={150}/>
+      </div> */}
       
       <div className="belle-countdown-title">
         <h2 className="magic-text">La Bella Celebración</h2>
