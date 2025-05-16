@@ -16,6 +16,7 @@
 
 .parchment.opened .parchment__main {
     opacity: 1;
+    overflow: hidden;
     display: block;
     animation-delay: 1s;
     animation: parchment-opened 1s ease-in-out;
@@ -38,6 +39,10 @@
 h1 {
     margin: 0;
     font-size: 3rem;
+}
+
+.parchment .date-section {
+    margin: 10rem 0 2rem;
 }
 
 .parchment .letter-section {

@@ -2,13 +2,17 @@
     position: relative;
 }
 
-.date__container .day-name {
-    transform: rotate(270deg)
+.date__container h2 {
+    font-size: 6rem ;
+}
+
+.date__container .day-name h2 {
+    transform: rotate(270deg) translateX(-10%);
 }
 
 .date__container .castle {
-    left: 0;
-    width: 100%;
+    left: -25%;
+    width: 150%;
     opacity: 0.15;
     position: absolute;
     transform: translateY(-50%);
@@ -18,10 +22,29 @@
     display: flex;
 }
 
+.date__container .month {
+    min-width: 10rem;
+    transform: translateX(-50%);
+}
+
+.date__container .year h1 {
+    width: 35%;
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'Great Vibes';
+    color: var(--midnight-blue);
+    transform: translateY(-30%);
+}
+
 .date__container .month-name {
-    color: blue;
+    margin: 0;
+    font-size: 4rem;
+    font-family: 'Great Vibes';
+    color: var(--midnight-blue);
 }
 
 .date__container .day {
-    font-size: 10vw;
+    font-size: 7rem;
+    margin-bottom: 0;
+    transform: translateY(-15%);
 }

@@ -10,12 +10,12 @@ const Date: React.FC = () => {
                 <div className="day-name">
                     <h2 className='magic-text'>S&aacute;bado</h2>
                 </div>
-                <div>
+                <div className='month'>
                     <h3 className='month-name'>Junio</h3>
                     <h2 className='day magic-text'>07</h2>
                 </div>
             </div>
-            <div>
+            <div className='year'>
                 <h1>2025</h1>
             </div>
         </div>
