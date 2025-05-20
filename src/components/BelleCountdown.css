@@ -566,7 +566,8 @@
     animation: textShine 3s linear infinite;
   }
   
-  .belle-countdown-title p {
+  .belle-countdown-title p,
+  h2.magic-text {
     font-family: 'Dancing Script', cursive;
     color: var(--belle-brown);
     font-size: 1.6rem;

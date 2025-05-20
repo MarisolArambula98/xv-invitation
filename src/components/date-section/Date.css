@@ -7,12 +7,12 @@
 }
 
 .date__container .day-name h2 {
-    transform: rotate(270deg) translateX(-10%);
+    transform: rotate(270deg) translateX(-25%);
 }
 
 .date__container .castle {
-    left: -25%;
-    width: 150%;
+    left: -10vw;
+    width: 100vw;
     opacity: 0.15;
     position: absolute;
     transform: translateY(-50%);
@@ -20,6 +20,8 @@
 
 .date__container .date-details {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .date__container .month {

@@ -105,7 +105,7 @@ html, body {
   .content-area {
     flex: 1;
     position: relative;
-    background-color: var(--parchment-color);
+
   }
   
   /* Footer */
