@@ -61,8 +61,7 @@ const BelleCountdown: React.FC<CountdownProps> = ({ targetDate }) => {
   };
 
   return (
-    <div className={`belle-countdown-container ${animation ? 'animate' : ''}`}>
-      {/* Enchanted Rose */}
+    <div className="container-countdown">
       <div className="enchanted-rose-container">
         <div className="glass-dome"></div>
         <div className="rose-stem"></div>
@@ -86,111 +85,119 @@ const BelleCountdown: React.FC<CountdownProps> = ({ targetDate }) => {
           ></div>
         ))}
       </div>
+      <img src='https://64.media.tumblr.com/e158f02792590e77cb845b80e8a13587/f4ff9c269cb80ec1-98/s1280x1920/781e4d59fe5cd1744b441658cb32b93c34ebc40d.gif'/>
 
-      {/* <div className='enchanted-rose-container'>
-        <img src={Beauty} width={150}/>
-      </div> */}
       
-      <div className="belle-countdown-title">
-        <h2 className="magic-text">La Bella Celebración</h2>
-        <p>Cuenta regresiva para el gran día</p>
-      </div>
-      
-      <div className="belle-countdown-timer">
-        <div className="countdown-item">
-          <div className="countdown-value">
-            {renderDigit(timeLeft.days, 0)}
-          </div>
-          <div className="countdown-label">Días</div>
-          <div className="countdown-decoration"></div>
-        </div>
-        
-        <div className="countdown-separator">:</div>
-        
-        <div className="countdown-item">
-          <div className="countdown-value">
-            {renderDigit(timeLeft.hours, 1)}
-          </div>
-          <div className="countdown-label">Horas</div>
-          <div className="countdown-decoration"></div>
-        </div>
-        
-        <div className="countdown-separator">:</div>
-        
-        <div className="countdown-item">
-          <div className="countdown-value">
-            {renderDigit(timeLeft.minutes, 2)}
-          </div>
-          <div className="countdown-label">Minutos</div>
-          <div className="countdown-decoration"></div>
-        </div>
-        
-        <div className="countdown-separator">:</div>
-        
-        <div className="countdown-item">
-          <div className="countdown-value">
-            {renderDigit(timeLeft.seconds, 3)}
-          </div>
-          <div className="countdown-label">Segundos</div>
-          <div className="countdown-decoration"></div>
-        </div>
-      </div>
-      
-      {/* Dancing Teacups and Candelabra */}
-      <div className="dancing-objects">
-        {/* <div className="teacup mrs-potts">
-          <div className="teacup-body"></div>
-          <div className="teacup-lid"></div>
-          <div className="teacup-spout"></div>
-          <div className="teacup-handle"></div>
-          <div className="teacup-face"></div>
-        </div>
-         */}
-        {/* <div className="teacup chip">
-          <div className="teacup-body small"></div>
-          <div className="teacup-face small"></div>
-        </div>
-         */}
-        {/* <div className="candelabra lumiere">
-          <div className="candelabra-base"></div>
-          <div className="candelabra-arm left"></div>
-          <div className="candelabra-arm right"></div>
-          <div className="candelabra-face"></div>
-          <div className="candle main">
-            <div className="flame"></div>
-          </div>
-          <div className="candle left">
-            <div className="flame"></div>
-          </div>
-          <div className="candle right">
-            <div className="flame"></div>
-          </div>
+      <div className={`belle-countdown-container ${animation ? 'animate' : ''}`}>
+        <div className="splitter"></div>
+        {/* Enchanted Rose */}
+  
+        {/* <div className='enchanted-rose-container'>
+          <img src={Beauty} width={150}/>
         </div> */}
+        
+        <div className="belle-countdown-title">
+          <h2 className="magic-text">La Bella Celebración</h2>
+          <p>Cuenta regresiva para el gran día</p>
+        </div>
+        
+        <div className="belle-countdown-timer">
+          <div className="countdown-item">
+            <div className="countdown-value">
+              {renderDigit(timeLeft.days, 0)}
+            </div>
+            <div className="countdown-label">Días</div>
+            <div className="countdown-decoration"></div>
+          </div>
+          
+          <div className="countdown-separator">:</div>
+          
+          <div className="countdown-item">
+            <div className="countdown-value">
+              {renderDigit(timeLeft.hours, 1)}
+            </div>
+            <div className="countdown-label">Horas</div>
+            <div className="countdown-decoration"></div>
+          </div>
+          
+          <div className="countdown-separator">:</div>
+          
+          <div className="countdown-item">
+            <div className="countdown-value">
+              {renderDigit(timeLeft.minutes, 2)}
+            </div>
+            <div className="countdown-label">Minutos</div>
+            <div className="countdown-decoration"></div>
+          </div>
+          
+          <div className="countdown-separator">:</div>
+          
+          <div className="countdown-item">
+            <div className="countdown-value">
+              {renderDigit(timeLeft.seconds, 3)}
+            </div>
+            <div className="countdown-label">Segundos</div>
+            <div className="countdown-decoration"></div>
+          </div>
+        </div>
+        
+        {/* Dancing Teacups and Candelabra */}
+        <div className="dancing-objects">
+          {/* <div className="teacup mrs-potts">
+            <div className="teacup-body"></div>
+            <div className="teacup-lid"></div>
+            <div className="teacup-spout"></div>
+            <div className="teacup-handle"></div>
+            <div className="teacup-face"></div>
+          </div>
+          */}
+          {/* <div className="teacup chip">
+            <div className="teacup-body small"></div>
+            <div className="teacup-face small"></div>
+          </div>
+          */}
+          {/* <div className="candelabra lumiere">
+            <div className="candelabra-base"></div>
+            <div className="candelabra-arm left"></div>
+            <div className="candelabra-arm right"></div>
+            <div className="candelabra-face"></div>
+            <div className="candle main">
+              <div className="flame"></div>
+            </div>
+            <div className="candle left">
+              <div className="flame"></div>
+            </div>
+            <div className="candle right">
+              <div className="flame"></div>
+            </div>
+          </div> */}
+        </div>
+        
+        {/* Sparkles */}
+        <div className="belle-sparkles">
+          {sparklesCount.map((i) => (
+            <div 
+              key={i} 
+              className="sparkle"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 5}s`,
+                animationDuration: `${3 + Math.random() * 3}s`
+              }}
+            ></div>
+          ))}
+        </div>
+        
+        <div className="belle-quote">
+          <p>"Tan viejo como el tiempo, tan verdadero como puede ser..."</p>
+        </div>
+        
+        {/* Ballroom Floor Reflection */}
+        <div className="ballroom-floor"></div>
       </div>
-      
-      {/* Sparkles */}
-      <div className="belle-sparkles">
-        {sparklesCount.map((i) => (
-          <div 
-            key={i} 
-            className="sparkle"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${3 + Math.random() * 3}s`
-            }}
-          ></div>
-        ))}
-      </div>
-      
-      <div className="belle-quote">
-        <p>"Tan viejo como el tiempo, tan verdadero como puede ser..."</p>
-      </div>
-      
-      {/* Ballroom Floor Reflection */}
-      <div className="ballroom-floor"></div>
     </div>
+    
   );
 };
 

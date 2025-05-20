@@ -10,11 +10,11 @@
   --belle-dark-gold: #b8860b;
   --belle-blue: #4169e1;
   --belle-dress-yellow: #f8e58c;
-  --belle-rose: #cc0033;
-  --belle-dark-rose: #8b0000;
+  --belle-rose: #8d0a2b;
+  --belle-dark-rose: #4a0505;
   --belle-brown: #8b4513;
-  --belle-cream: #fef8e8;
-  --belle-light-cream: #fffaf0;
+  --belle-cream: #efefef;
+  --belle-light-cream: #ffffff;
   --belle-green: #006400;
   --belle-light-green: #228b22;
   --beast-blue: #1e3a8a;
@@ -44,6 +44,16 @@
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
   z-index: 1;
+  clip-path: polygon(8% 0, 92% 0, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0 92%, 0 8%);
+   border: solid 4px var(--belle-gold);
+}
+.belle-countdown-container .splitter{
+  position: absolute;
+  top: 12%;
+  left: 12%;
+  transform: rotate(135deg);
+  width: 10%;
+  border: 1px solid black;
 }
 
 .belle-countdown-container.animate {
@@ -224,12 +234,12 @@
   /* Enchanted Rose */
   .enchanted-rose-container {
     position: absolute;
-    top: 15%;
-    right: 5%;
+    top: -11%;
+    left: 50%;
     transform: translateX(-50%);
     width: 100px;
     height: 150px;
-    z-index: 20;
+    z-index: -1;
 }
   
   .glass-dome {
@@ -762,7 +772,15 @@
     background-size: 20px 20px;
     opacity: 0.3;
   }
-  
+
+  .container-countdown {
+    position: relative;
+    
+  }
+  .container-countdown img {
+        width: 100%;
+        margin-top: 0%;
+  }
   /* Animations */
   @keyframes digitPop {
     0% { transform: scale(0); opacity: 0; }

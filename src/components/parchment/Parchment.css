@@ -251,11 +251,20 @@ h1 {
   margin-bottom: 1.5rem;
   position: relative;
 }
-
+  
 .ornate-banner {
   max-width: 100%;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
   transition: transform 0.5s ease;
+}
+.beast-image {
+  position: absolute;
+  width: 20vw;
+  opacity: 0.1;
+  right: -10vw;
+  top: 10vw;
+  z-index: -1;
+
 }
 
 .ornate-banner:hover {
