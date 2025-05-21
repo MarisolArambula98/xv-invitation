@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 2rem 6rem;
+  padding: 4rem 2rem 9rem;
   background: linear-gradient(135deg, var(--belle-cream) 0%, var(--belle-light-cream) 100%);
   border-radius: 20px;
   box-shadow: 
@@ -44,7 +44,7 @@
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
   z-index: 1;
-  clip-path: polygon(8% 0, 92% 0, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0 92%, 0 8%);
+  /* clip-path: polygon(8% 0, 92% 0, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0 92%, 0 8%); */
    border: solid 4px var(--belle-gold);
 }
 .belle-countdown-container .splitter{
@@ -234,7 +234,7 @@
   /* Enchanted Rose */
   .enchanted-rose-container {
     position: absolute;
-    top: -11%;
+    bottom: 0%;
     left: 50%;
     transform: translateX(-50%);
     width: 100px;
@@ -260,7 +260,7 @@
   
   .rose-stem {
     position: absolute;
-    top: 40px;
+    bottom: 0px;
     left: 50px;
     width: 3px;
     height: 80px;
@@ -270,7 +270,7 @@
   
   .rose-flower {
     position: absolute;
-    top: 25px;
+    top: 50px;
     left: 40px;
     width: 25px;
     height: 25px;
@@ -286,6 +286,34 @@
     border-radius: 50% 0 50% 50%;
     transform-origin: bottom right;
   }
+  .floor-petal {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f8d7da; /* Light pink color for rose petals */
+    border-radius: 50% 0 50% 50%;
+    transform-origin: center;
+    transform: rotate(45deg) scale(1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  /* Optional: Add hover effect for interactivity */
+  .floor-petal:hover {
+    transform: rotate(45deg) scale(1.2);
+    z-index: 2;
+  }
+  
+  /* Optional: Add different colors for some petals */
+  .floor-petal:nth-child(3n) {
+    background-color: #dd707b; /* Slightly darker pink */
+  }
+  
+  .floor-petal:nth-child(5n) {
+    background-color: #4d0710; /* Lighter pink */
+  }
+  
   
   .petal-1 { transform: rotate(0deg) translateX(0px); }
   .petal-2 { transform: rotate(72deg) translateX(0px); }
@@ -305,7 +333,7 @@
   
   .rose-base {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     left: 4px;
     width: 95px;
     height: 10px;
@@ -313,6 +341,17 @@
     border-radius: 5px;
     z-index: 1;
     }
+
+  .floor-petal {
+    position: absolute;
+    bottom: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--belle-rose);
+    border-radius: 50% 0 50% 50%;
+    opacity: 0.8;
+    z-index: 1;
+  }
   
   /* Dancing Objects */
   .dancing-objects {
@@ -601,7 +640,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     z-index: 1;
     position: relative;
   }

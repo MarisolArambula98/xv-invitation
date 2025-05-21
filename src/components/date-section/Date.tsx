@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faClock } from '@fortawesome/free-solid-svg-icons';
 import banquete from '../../assets/4716278.png'
 import baile from '../../assets/baile.png'
+import Beast from '../../assets/bella_beast.png';
+
 
 const eventDetails = {
     date: "July 7, 2025",
@@ -17,13 +19,16 @@ const Date: React.FC = () => {
     return (
         <div className="date__container">
             <img className='castle' src={Castle}/>
+            <img src={Beast} alt="" className='beast-image' />
             <div className='date-details'>
-                <div className="day-name">
-                    <h2 className='magic-text'>S&aacute;bado</h2>
-                </div>
-                <div className='month'>
-                    <h3 className='month-name'>Junio</h3>
-                    <h2 className='day magic-text'>07</h2>
+                <div className='date-container'>
+                    <div className="day-name">
+                        <h2 className='magic-text'>S&aacute;bado</h2>
+                    </div>
+                    <div className='month'>
+                        <h3 className='month-name'>Junio</h3>
+                        <h2 className='day magic-text'>07</h2>
+                    </div>
                 </div>
                 <div className="event-card">
                     <div className="event-header">

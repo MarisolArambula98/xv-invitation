@@ -3,7 +3,6 @@ import ParchmentHead from '../parchment-head/ParchmentHead';
 import './Parchment.css'
 import Layout from '../../pages/layout/main';
 import Banner from '../../assets/BannerInvitacion.png';
-import Beast from '../../assets/bella_beast.png';
 import CLetter from '../../assets/c.png';
 import BelleCountdown from '../BelleCountdown'
 import AnimatedText from '../animated-text/AnimatedText';
@@ -50,7 +49,6 @@ function Parchment() {
                         <div className="invitation-header">
                             <div className="banner-container">
                                 <img src={Banner} alt="banner" id='Banner' className="ornate-banner" />
-                                <img src={Beast} alt="" className='beast-image' />
                             </div>
                             <div className="animated-name-container">
                                 <AnimatedText />

@@ -252,9 +252,11 @@
     }
     
     .event-card {
-      padding: 1.5rem;
+      margin: 0;
     }
-    
+    .event-header{
+      margin-bottom: 0;
+    }
     .event-header h2 {
       font-size: 2.2rem;
     }
@@ -265,9 +267,19 @@
     }
     
     .event-date-time {
-      flex-direction: column;
+      flex-direction: row;
       gap: 1rem;
       align-items: center;
+    }
+    .date__container .year{
+      display: flex;
+      justify-content: center;
+    }
+    .date__container .year h1{
+      margin: 0;
+      padding: 0;
+      line-height: 85px;
+      transform: translateY(0%);
     }
   }
   
