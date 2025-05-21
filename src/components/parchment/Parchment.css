@@ -28,8 +28,30 @@
   opacity: 0;
   display: none;
   padding: 50px 5vw;
-  background-color: var(--parchment-color);
+  /* background-color: var(--parchment-color); */
+  z-index: 2;
+
 }
+
+.parchment__content{
+    position: relative;
+    overflow: hidden;
+}
+
+.parchment__content:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  top: -20px;
+  left: 2px;
+  right: 10px;
+  box-shadow: 2px 3px 10px rgb(222, 184, 87), 0 0 30px #8a4d0f inset;
+  background: #fffef0 url(https://culturanuova.net/multimedia/img/svg/noise.svg);
+  filter: url(#wavy2);
+  z-index: 1;
+}
+
 
 .parchment.opened .parchment__head {
   display: none;
@@ -251,7 +273,7 @@ h1 {
   margin-bottom: 1.5rem;
   position: relative;
 }
-  
+
 .ornate-banner {
   max-width: 100%;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
