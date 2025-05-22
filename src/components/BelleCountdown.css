@@ -26,14 +26,16 @@
 }
 
 .belle-countdown-container {
+  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
-   padding: 4rem 2rem 9rem;
+   padding: 5vw 2rem 9rem;
   /* background: linear-gradient(135deg, var(--parchment-color) 0%, var(--parchment-color) 100%);
  padding: 4rem 2rem 160px; */
-  background: linear-gradient(135deg, var(--belle-cream) 0%, var(--belle-light-cream) 100%);
-  border-radius: 20px;
+  /* background: linear-gradient(135deg, var(--belle-cream) 0%, var(--belle-light-cream) 100%); */
+  /* background: linear-gradient(135deg, var(--parchment-color) 0%, var(--parchment-color) 100%); */
+  border-radius: 0;
   /* box-shadow: 
     0 10px 30px rgba(0, 0, 0, 0.1),
     0 0 0 2px var(--belle-gold),
@@ -42,12 +44,12 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  transform: translateY(50px);
+  /* transform: translateY(50px); */
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
   z-index: 1;
   /* clip-path: polygon(8% 0, 92% 0, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0 92%, 0 8%); */
-   border: solid 2px var(--belle-gold);
+   border-bottom: solid 2px var(--belle-gold);
 }
 .belle-countdown-container .splitter{
   position: absolute;
@@ -602,7 +604,7 @@
   .belle-countdown-title h2 {
     font-family: 'Great Vibes', cursive;
     color: var(--belle-dark-rose);
-    font-size: 4rem !important;
+    /* font-size: 4rem !important; */
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -825,7 +827,7 @@
   }
   .container-countdown img {
         width: 100%;
-        margin-top: 0%;
+        margin-top: 3%;
   }
   /* Animations */
   @keyframes digitPop {

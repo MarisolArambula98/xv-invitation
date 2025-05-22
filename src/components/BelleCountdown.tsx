@@ -123,9 +123,6 @@ const floorPetals = useMemo(() => {
   return (
     <div className="container-countdown">
       
-      <img src='https://64.media.tumblr.com/e158f02792590e77cb845b80e8a13587/f4ff9c269cb80ec1-98/s1280x1920/781e4d59fe5cd1744b441658cb32b93c34ebc40d.gif'/>
-
-      
       <div className={`belle-countdown-container ${animation ? 'animate' : ''}`}>
         {/* <div className="splitter"></div> */}
         {/* Enchanted Rose */}

@@ -293,7 +293,6 @@ h1 {
   width: 33vw;
   opacity: 0.1;
   left: 50%;
-  bottom: -10%;
   transform: translate(-50%);
   z-index: -1;
 
@@ -447,7 +446,7 @@ h1 + div::before {
 }
 
 .parchment__content .location__section {
-  margin: 15vw 0 10vw;
+  margin: 10vw 0 10vw;
 }
 
 /* Responsive adjustments */

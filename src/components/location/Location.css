@@ -22,6 +22,8 @@
 }
 
 .location__container iframe {
+  width: 50vw;
+  height: 50vw;
   filter: saturate(0);
   border-radius: 50%;
 }
@@ -77,5 +79,10 @@
     width: 140vw;
     height: 140vw;
     transform: translate(-50%, -45%);
+  }
+
+  .location__container iframe {
+    width: 80vw;
+    height: 80vw;
   }
 }

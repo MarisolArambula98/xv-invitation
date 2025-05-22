@@ -13,14 +13,21 @@
 
 .date__container .castle {
     left: 50%;
+    bottom: 0;
     width: 100vw;
     min-width: 800px;
     opacity: 0.15;
     position: absolute;
-    transform: translate(-50%, -50%);
-    background-position: top;
+    transform: translateX(-50%);
 }
 
+.date__container .roses-chain {
+    position: absolute;
+    bottom: 0;
+    left: -5vw;
+    width: calc(100% + 10vw);
+    transform: translateY(50%);
+}
 
 .date__container .date-details {
     display: flex;
@@ -57,4 +64,10 @@
 .date-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+    .date__container .castle {
+        width: 150vw;
+    }
 }
