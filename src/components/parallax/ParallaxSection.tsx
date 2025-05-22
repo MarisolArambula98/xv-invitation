@@ -89,7 +89,7 @@ const ParallaxSection = () => {
               <div className="title-inner">
                 <h2>Un Cuento de Hadas</h2>
                 <div className="title-divider"></div>
-                <p>Sé nuestro invitado en esta celebración mágica</p>
+                <p>Los momentos mas felices y divertidos de la vida se pasan mejor en compania por eso celebremos juntos en este dia</p>
                 <div className="parallax-quote">
                   <p>"Tale as old as time, song as old as rhyme..."</p>
                 </div>
@@ -116,7 +116,7 @@ const ParallaxSection = () => {
         
         {/* Optional: Add a handwritten caption below the photo */}
         <div className="photo-caption">
-          "Nuestra historia de amor..."
+          "Te esperamos..."
         </div>
       </div>
     </div>
