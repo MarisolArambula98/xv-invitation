@@ -1,4 +1,88 @@
+.location__container {
+  position: relative;
+  margin: 10vw 0;
+}
+
+.location__container .map__container {
+  /* filter: grayscale(1); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .location__container .location__mask {
-  width: 100%;
-  background-image: url(../../assets/map.png);
+  width: 100vw;
+  height: 100vw;
+  left: 50%;
+  opacity: 0.5;
+  transform: translateX(-50%);
+  position: absolute;
+  background-size: contain;
+  background-image: url(../../assets/map-bg.webp);
+}
+
+.location__container iframe {
+  width: 50vw;
+  height: 50vw;
+  filter: saturate(0);
+  border-radius: 50%;
+}
+
+.location__container .map__container .beast-img {
+    left: 50%;
+    width: 50vw;
+    opacity: 0.15;
+    position: absolute;
+}
+
+.location__container .location__text {
+  margin-left: 1rem;
+}
+
+.location__container .location__text h2 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.location__container .location__text h3 {
+  margin: 0;
+  font-family: 'Great Vibes';
+  color: var(--midnight-blue);
+  font-size: clamp(1rem, 5vw, 3rem);
+}
+
+.location__container .location__text h4 {
+  margin: 0;
+  color: #2b0909;
+  font-weight: 300;
+  font-size: clamp(1rem, 2vw, 3rem);
+}
+
+@media(max-width: 768px) {
+  .location__container .map__container {
+    margin-left: 0;
+    flex-direction: column-reverse;
+  }
+
+  .location__container .map__container .beast-img {
+    top: 0;
+    left: 0;
+  }
+
+  .location__container .location__text {
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  .location__container .location__mask {
+    top: 50%;
+    width: 140vw;
+    height: 140vw;
+    transform: translate(-50%, -45%);
+  }
+
+  .location__container iframe {
+    width: 80vw;
+    height: 80vw;
+  }
 }

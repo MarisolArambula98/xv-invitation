@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
 #root {
-  width: 92%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,8 +15,9 @@
 
   --midnight-blue: #191970;
   --parchment-color: rgb(255 249 237);
-  --parchment-body-width: 90vw;
-  --parchment-head-width: 80px;
+  --parchment-body-width: 100vw;
+  --parchment-head-width: 10vw;
+  --parchment-max-head-width: 80px;
   --parchment-animation-duration: 3s;
   --parchment-width: var(var(--parchment-body-width) + var(--parchment-head-width));
 }
@@ -247,8 +250,15 @@ body {
 } */
 
 .parchment__container {
+
   /* top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%); */
+}
+
+.alex-brush-regular {
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
 }

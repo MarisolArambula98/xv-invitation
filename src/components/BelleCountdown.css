@@ -10,11 +10,11 @@
   --belle-dark-gold: #b8860b;
   --belle-blue: #4169e1;
   --belle-dress-yellow: #f8e58c;
-  --belle-rose: #cc0033;
-  --belle-dark-rose: #8b0000;
+  --belle-rose: #8d0a2b;
+  --belle-dark-rose: #4a0505;
   --belle-brown: #8b4513;
-  --belle-cream: #fef8e8;
-  --belle-light-cream: #fffaf0;
+  --belle-cream: #efefef;
+  --belle-light-cream: #ffffff;
   --belle-green: #006400;
   --belle-light-green: #228b22;
   --beast-blue: #1e3a8a;
@@ -26,24 +26,38 @@
 }
 
 .belle-countdown-container {
+  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 2rem 6rem;
-  background: linear-gradient(135deg, var(--belle-cream) 0%, var(--belle-light-cream) 100%);
-  border-radius: 20px;
-  box-shadow: 
+   padding: 5vw 2rem 9rem;
+  /* background: linear-gradient(135deg, var(--parchment-color) 0%, var(--parchment-color) 100%);
+ padding: 4rem 2rem 160px; */
+  /* background: linear-gradient(135deg, var(--belle-cream) 0%, var(--belle-light-cream) 100%); */
+  /* background: linear-gradient(135deg, var(--parchment-color) 0%, var(--parchment-color) 100%); */
+  border-radius: 0;
+  /* box-shadow: 
     0 10px 30px rgba(0, 0, 0, 0.1),
     0 0 0 2px var(--belle-gold),
     0 0 0 10px var(--belle-cream),
-    0 0 30px rgba(212, 175, 55, 0.3);
+    0 0 30px rgba(212, 175, 55, 0.3); */
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  transform: translateY(50px);
+  /* transform: translateY(50px); */
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
   z-index: 1;
+  /* clip-path: polygon(8% 0, 92% 0, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0 92%, 0 8%); */
+   border-bottom: solid 2px var(--belle-gold);
+}
+.belle-countdown-container .splitter{
+  position: absolute;
+  top: 12%;
+  left: 12%;
+  transform: rotate(135deg);
+  width: 10%;
+  border: 1px solid black;
 }
 
 .belle-countdown-container.animate {
@@ -224,12 +238,12 @@
   /* Enchanted Rose */
   .enchanted-rose-container {
     position: absolute;
-    top: 15%;
-    right: 5%;
+    bottom: 0%;
+    left: 50%;
     transform: translateX(-50%);
     width: 100px;
     height: 150px;
-    z-index: 20;
+    z-index: -1;
 }
   
   .glass-dome {
@@ -250,7 +264,7 @@
   
   .rose-stem {
     position: absolute;
-    top: 40px;
+    bottom: 0px;
     left: 50px;
     width: 3px;
     height: 80px;
@@ -260,7 +274,7 @@
   
   .rose-flower {
     position: absolute;
-    top: 25px;
+    top: 50px;
     left: 40px;
     width: 25px;
     height: 25px;
@@ -276,6 +290,34 @@
     border-radius: 50% 0 50% 50%;
     transform-origin: bottom right;
   }
+  .floor-petal {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f8d7da; /* Light pink color for rose petals */
+    border-radius: 50% 0 50% 50%;
+    transform-origin: center;
+    transform: rotate(45deg) scale(1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  /* Optional: Add hover effect for interactivity */
+  .floor-petal:hover {
+    transform: rotate(45deg) scale(1.2);
+    z-index: 2;
+  }
+  
+  /* Optional: Add different colors for some petals */
+  .floor-petal:nth-child(3n) {
+    background-color: #dd707b; /* Slightly darker pink */
+  }
+  
+  .floor-petal:nth-child(5n) {
+    background-color: #4d0710; /* Lighter pink */
+  }
+  
   
   .petal-1 { transform: rotate(0deg) translateX(0px); }
   .petal-2 { transform: rotate(72deg) translateX(0px); }
@@ -295,7 +337,7 @@
   
   .rose-base {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     left: 4px;
     width: 95px;
     height: 10px;
@@ -303,6 +345,17 @@
     border-radius: 5px;
     z-index: 1;
     }
+
+  .floor-petal {
+    position: absolute;
+    bottom: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--belle-rose);
+    border-radius: 50% 0 50% 50%;
+    opacity: 0.8;
+    z-index: 1;
+  }
   
   /* Dancing Objects */
   .dancing-objects {
@@ -551,7 +604,7 @@
   .belle-countdown-title h2 {
     font-family: 'Great Vibes', cursive;
     color: var(--belle-dark-rose);
-    font-size: 4rem;
+    /* font-size: 4rem !important; */
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -566,7 +619,8 @@
     animation: textShine 3s linear infinite;
   }
   
-  .belle-countdown-title p {
+  .belle-countdown-title p,
+  h2.magic-text {
     font-family: 'Dancing Script', cursive;
     color: var(--belle-brown);
     font-size: 1.6rem;
@@ -590,9 +644,13 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     z-index: 1;
     position: relative;
+  }
+
+  .belle-countdown-title .magic-text{
+    font-size: clamp(2rem, 6vw, 4rem);
   }
   
   .countdown-item {
@@ -649,6 +707,7 @@
     margin: 0 -0.2rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     animation: separatorPulse 2s infinite;
+    padding-bottom: 8vh;
   }
   
   .countdown-label {
@@ -761,7 +820,15 @@
     background-size: 20px 20px;
     opacity: 0.3;
   }
-  
+
+  .container-countdown {
+    position: relative;
+    
+  }
+  .container-countdown img {
+        width: 100%;
+        margin-top: 3%;
+  }
   /* Animations */
   @keyframes digitPop {
     0% { transform: scale(0); opacity: 0; }
@@ -901,7 +968,7 @@
   /* Responsive styles */
   @media (max-width: 768px) {
     .belle-countdown-container {
-      padding: 3rem 1rem 5rem;
+      /* padding: 3rem 1rem 125px; */
     }
     
     .belle-countdown-title h2 {
@@ -956,7 +1023,7 @@
   
   @media (max-width: 480px) {
     .belle-countdown-container {
-      padding: 2.5rem 0.5rem 4rem;
+      /* padding: 2.5rem 0.5rem 4rem; */
     }
     
     .belle-countdown-title h2 {

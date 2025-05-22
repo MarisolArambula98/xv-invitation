@@ -25,7 +25,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <div className="fancy-layout">
-      <header className={`transparent-menu ${scrolled ? 'scrolled' : ''}`}>
+      {/* <header className={`transparent-menu ${scrolled ? 'scrolled' : ''}`}>
         <div className="menu-container">
           <div className="logo">XV</div>
           <nav className="menu-items">
@@ -41,7 +41,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <span></span>
           </div>
         </div>
-      </header>
+      </header> */}
       
       <main className="content-area">
         {children}
