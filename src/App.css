@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
 #root {
   width: 92%;
   display: flex;
@@ -252,4 +254,10 @@ body {
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%); */
+}
+
+.alex-brush-regular {
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
 }

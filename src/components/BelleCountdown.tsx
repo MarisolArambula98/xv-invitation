@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import './BelleCountdown.css';
-import Beauty from '../assets/unnamed.png';
+import Beast from '../assets/beast.png';
 
 interface CountdownProps {
   targetDate: Date;

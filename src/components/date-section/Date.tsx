@@ -1,7 +1,7 @@
 import './Date.css';
 import Castle from '../../assets/castle.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faClock } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {  faClock } from '@fortawesome/free-solid-svg-icons';
 import banquete from '../../assets/4716278.png'
 import baile from '../../assets/baile.png'
 import Beast from '../../assets/bella_beast.png';

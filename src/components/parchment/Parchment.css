@@ -430,6 +430,16 @@ h1 + div::before {
   z-index: -1;
 }
 
+.parchment__content .welcome-text {
+  color: #430202;
+  font-size: clamp(2rem, 7vw, 4rem);
+  line-height: clamp(2rem, 7vw, 4rem);
+}
+
+.parchment__content .location__section {
+  margin: 15vw 0 10vw;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   #Banner {
