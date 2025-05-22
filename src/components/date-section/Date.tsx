@@ -2,7 +2,7 @@ import './Date.css';
 import Castle from '../../assets/castle.png';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import {  faClock } from '@fortawesome/free-solid-svg-icons';
-import banquete from '../../assets/4716278.png'
+import cutlery from '../../assets/cutlery (1).png'
 import baile from '../../assets/baile.png'
 import Beast from '../../assets/bella_beast.png';
 
@@ -37,7 +37,7 @@ const Date: React.FC = () => {
                     </div>  
                     <div className="event-details">
                         <div className="event-date-time">
-                            <img src={banquete} alt="banquete" width={'14%'}/>
+                            <img src={cutlery} alt="banquete" width={'14%'}/>
 
                             <div className="detail-item">
                                 {/* <span className="detail-icon">
