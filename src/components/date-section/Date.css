@@ -40,7 +40,7 @@
 }
 
 .date__container .year h1 {
-    width: 35%;
+    width: fit-content;
     font-size: 6rem;
     text-align: center;
     font-family: 'Great Vibes';
@@ -69,5 +69,9 @@
 @media (max-width: 768px) {
     .date__container .castle {
         width: 150vw;
+    }
+
+    .date-container .year h1 {
+        width: 100%;
     }
 }
