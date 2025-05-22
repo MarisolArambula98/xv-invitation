@@ -19,6 +19,7 @@
 
 .parchment__img {
     width: var(--parchment-head-width);
+    max-width: var(--parchment-max-head-width);
 }
 
 .parchment__img.reverse {
@@ -31,7 +32,8 @@
 
 .parchment__body {
     width: var(--parchment-body-width);
-    height: 100px;
+    height: 20vw;
+    max-height: 100px;
     background-color: white;
     background-color: var(--parchment-color);
     box-shadow: inset 0px -9px 30px -3px rgba(0,0,0,0.15);
