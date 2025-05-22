@@ -295,7 +295,7 @@ h1 {
   left: 50%;
   transform: translate(-50%);
   z-index: -1;
-
+  bottom: 0;
 }
 
 .ornate-banner:hover {
@@ -461,3 +461,266 @@ h1 + div::before {
   }
 }
 
+
+/* Dress Code Section Styles
+.dress-code-section {
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.dress-code-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../assets/rose-pattern.png');
+  background-size: 100px;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.dress-code-container {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.dress-code-title {
+  font-size: 2.5rem;
+  color: #8B4513;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dress-code-divider {
+  margin: 15px auto;
+  width: 80%;
+  position: relative;
+  height: 20px;
+}
+
+.divider-rose {
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dress-code-message {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #5D4037;
+}
+
+.dress-code-highlight {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+
+.no-yellow {
+  color: #B71C1C;
+  font-weight: bold;
+}
+
+.yellow-text {
+  color: #B71C1C;
+  font-weight: bold;
+  text-decoration: line-through;
+  text-decoration-color: #B71C1C;
+  text-decoration-thickness: 2px;
+}
+
+.dress-code-icon {
+  margin-top: 20px;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.yellow-dress {
+  color: #FFD700;
+  position: relative;
+}
+
+.prohibition-symbol {
+  position: absolute;
+  color: #B71C1C;
+  font-size: 2.5rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.dress-code-container {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.dress-code-title {
+  font-size: 2.5rem;
+  color: #8B4513;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dress-code-divider {
+  margin: 15px auto;
+  width: 80%;
+  position: relative;
+  height: 20px;
+}
+
+.divider-rose {
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dress-code-message {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #5D4037;
+}
+
+.dress-code-highlight {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+
+.no-yellow {
+  color: #B71C1C;
+  font-weight: bold;
+}
+
+.yellow-text {
+  color: #B71C1C;
+  font-weight: bold;
+  text-decoration: line-through;
+  text-decoration-color: #B71C1C;
+  text-decoration-thickness: 2px;
+}
+
+.dress-code-icon {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.floating-dress-container {
+  position: relative;
+  display: inline-block;
+  animation: float 6s infinite ease-in-out;
+  transform-origin: center center;
+}
+
+.prohibition-img {
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+}
+
+.prohibition-symbol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
+.prohibition-symbol::before {
+  width: 120%;
+  height: 4px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.prohibition-symbol::after {
+  width: 120%;
+  height: 4px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.floating-dress-container::before,
+.floating-dress-container::after {
+  content: "✨";
+  position: absolute;
+  color: gold;
+  font-size: 20px;
+  animation: sparkle 3s infinite ease-in-out;
+  z-index: 2;
+}
+
+.floating-dress-container::before {
+  top: 10%;
+  left: 30%;
+  animation-delay: 0.5s;
+}
+
+.floating-dress-container::after {
+  bottom: 30%;
+  right: 30%;
+  animation-delay: 1.5s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(15deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(10px) rotate(-15deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-dress-container {
+    width: 60%;
+  }
+  
+  .dress-code-title {
+    font-size: 2rem;
+  }
+  
+  .dress-code-message {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-dress-container {
+    width: 80%;
+  }
+  
+  .dress-code-title {
+    font-size: 1.8rem;
+  }
+} */
