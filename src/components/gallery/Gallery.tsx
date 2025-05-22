@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import './Gallery.css';
 
 const Gallery: React.FC = () => {
