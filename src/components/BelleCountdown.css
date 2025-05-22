@@ -967,9 +967,6 @@
   
   /* Responsive styles */
   @media (max-width: 768px) {
-    .belle-countdown-container {
-      /* padding: 3rem 1rem 125px; */
-    }
     
     .belle-countdown-title h2 {
       font-size: 2.5rem;
@@ -1022,10 +1019,6 @@
   }
   
   @media (max-width: 480px) {
-    .belle-countdown-container {
-      /* padding: 2.5rem 0.5rem 4rem; */
-    }
-    
     .belle-countdown-title h2 {
       font-size: 2rem;
     }

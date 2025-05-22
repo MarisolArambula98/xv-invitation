@@ -1,10 +1,5 @@
-import { useState, useEffect } from 'react';
+import {  useEffect } from 'react';
 import './EventSchedule.css';
-import banquete from '../assets/4716278.png'
-import CastleImage from '../assets/castle.png'; // Import the castle image
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt, faClock, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-
 interface EventScheduleProps {
   eventDetails: {
     date: string;
@@ -19,14 +14,12 @@ interface EventScheduleProps {
   };
 }
 
-const EventSchedule: React.FC<EventScheduleProps> = ({ eventDetails, location }) => {
-  const [isVisible, setIsVisible] = useState(false);
+const EventSchedule: React.FC<EventScheduleProps> = () => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
           observer.disconnect();
         }
       },

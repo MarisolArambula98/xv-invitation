@@ -1,7 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
 import './BelleCountdown.css';
-import Beast from '../assets/beast.png';
-
 interface CountdownProps {
   targetDate: Date;
 }

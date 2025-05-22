@@ -3,15 +3,12 @@ import ParchmentHead from '../parchment-head/ParchmentHead';
 import './Parchment.css'
 import Layout from '../../pages/layout/main';
 import Banner from '../../assets/BannerInvitacion.png';
-import CLetter from '../../assets/c.png';
 import BelleCountdown from '../BelleCountdown'
 import AnimatedText from '../animated-text/AnimatedText';
-import Gallery from '../gallery/Gallery';
 import Location from '../location/Location';
 import DateSection from '../date-section/Date'
 import EventSchedule from '../EventSchedule';
 import ParallaxSection from '../parallax/ParallaxSection';
-import Roses from '../../assets/Roses.png';
 
 
 function Parchment() {
