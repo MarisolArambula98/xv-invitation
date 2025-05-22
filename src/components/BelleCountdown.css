@@ -29,8 +29,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 2rem 9rem;
-  background: linear-gradient(135deg, var(--parchment-color) 0%, var(--parchment-color) 100%);
+   padding: 4rem 2rem 9rem;
+  /* background: linear-gradient(135deg, var(--parchment-color) 0%, var(--parchment-color) 100%);
+ padding: 4rem 2rem 160px; */
+  background: linear-gradient(135deg, var(--belle-cream) 0%, var(--belle-light-cream) 100%);
   border-radius: 20px;
   /* box-shadow: 
     0 10px 30px rgba(0, 0, 0, 0.1),
@@ -644,6 +646,10 @@
     z-index: 1;
     position: relative;
   }
+
+  .belle-countdown-title .magic-text{
+    font-size: clamp(2rem, 6vw, 4rem);
+  }
   
   .countdown-item {
     display: flex;
@@ -699,6 +705,7 @@
     margin: 0 -0.2rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     animation: separatorPulse 2s infinite;
+    padding-bottom: 8vh;
   }
   
   .countdown-label {

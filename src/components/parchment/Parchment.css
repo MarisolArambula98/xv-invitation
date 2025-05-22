@@ -52,6 +52,15 @@
   z-index: 1;
 }
 
+.letter-section.invitation-title .decor-roses{
+  width: 15vw;
+    position: absolute;
+    top: 69%;
+    left: 36%;
+    filter: brightness(1);
+    z-index: 4;
+    transform: rotate(-45deg);
+}
 
 .parchment.opened .parchment__head {
   display: none;
@@ -142,7 +151,7 @@ h1 {
 /* Add these styles to your existing Parchment.css file */
 
 .event-schedule-section {
-  margin: 4rem 0;
+  margin: 0 0;
   position: relative;
 }
 
@@ -281,10 +290,11 @@ h1 {
 }
 .beast-image {
   position: absolute;
-  width: 20vw;
+  width: 33vw;
   opacity: 0.1;
-  right: -10vw;
-  top: 10vw;
+  left: 50%;
+  bottom: -10%;
+  transform: translate(-50%);
   z-index: -1;
 
 }

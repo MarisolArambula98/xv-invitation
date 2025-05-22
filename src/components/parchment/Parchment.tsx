@@ -11,6 +11,7 @@ import Location from '../location/Location';
 import DateSection from '../date-section/Date'
 import EventSchedule from '../EventSchedule';
 import ParallaxSection from '../parallax/ParallaxSection';
+import Roses from '../../assets/Roses.png';
 
 
 function Parchment() {
