@@ -10,7 +10,7 @@
 }
 
 .parchment__content {
-  background: var(--parchment-color);
+  /* background: var(--parchment-color); */
   width: var(--parchment-body-width);
   /* border: solid 1px rgb(211, 200, 165); */
   box-shadow: rgb(211, 200, 165) 0px 4px 16px, rgb(211, 200, 165) 0px 8px 32px;
@@ -67,7 +67,7 @@
 }
 
 #Banner {
-    width: 60vw;
+    width: 68vw;
 }
 
 h1 {

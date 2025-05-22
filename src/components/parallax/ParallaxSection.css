@@ -1,6 +1,6 @@
 .parallax-wrapper {
   position: relative;
-  padding: 3rem 0;
+  padding: 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,8 +191,7 @@
 
 .parallax-title {
   text-align: center;
-  will-change: transform;
-  transition: transform 0.1s ease-out;
+
 }
 
 .title-inner {
@@ -220,7 +219,7 @@
 .parallax-title h2 {
   font-size: 3.5rem;
   font-family: 'Tangerine', cursive;
-  margin-bottom: 1rem;
+  margin: 0rem;
   color: #d4af37;
   text-shadow: 
     0 0 5px rgba(0, 0, 0, 0.7),
@@ -229,15 +228,13 @@
 }
 
 .parallax-title p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-style: italic;
-  margin-bottom: 1.5rem;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
 .parallax-quote {
-  margin-top: 2rem;
   font-family: 'Tangerine', cursive;
   position: relative;
 }
@@ -375,7 +372,7 @@
 
 @media (max-width: 480px) {
   .parallax-container {
-    height: 50vh;
+    height: 55vh;
     border-width: 5px;
   }
   

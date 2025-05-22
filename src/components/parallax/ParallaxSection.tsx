@@ -80,11 +80,11 @@ const ParallaxSection = () => {
           <div className="parallax-content">
             <div 
               className="parallax-title" 
-              style={{ 
-                transform: `translateY(${-offset * 0.2}px) 
-                            translateX(${mousePosition.x * 15}px) 
-                            translateY(${mousePosition.y * 15}px)` 
-              }}
+              // style={{ 
+              //   transform: `translateY(${-offset * 0.2}px) 
+              //               translateX(${mousePosition.x * 15}px) 
+              //               translateY(${mousePosition.y * 15}px)` 
+              // }}
             >
               <div className="title-inner">
                 <h2>Un Cuento de Hadas</h2>
