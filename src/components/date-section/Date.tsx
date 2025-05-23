@@ -10,7 +10,7 @@ import Buzon from '../../assets/buzon.png'
 
 
 const eventDetails = {
-    date: "9:30 PM - 10:30 AM",
+    date: "9:30 PM - 10:30 PM",
     time: "9:00 PM - 2:00 AM",
     title: "Un Cuento Tan Antiguo Como el Tiempo: La Quinceañera de Leslie",
     description: "Acompáñanos en una noche encantada celebrando los 15 años de Leslie. Esta celebración mágica incluirá una ceremonia especial, cena, baile y recuerdos que durarán toda la vida. Por favor, sé nuestro invitado para este evento real mientras transformamos nuestro lugar en el castillo de la Bestia por una noche mágica."
