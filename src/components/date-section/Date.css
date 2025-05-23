@@ -66,15 +66,6 @@
     grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 768px) {
-    .date__container .castle {
-        width: 150vw;
-    }
-
-    .date-container .year h1 {
-        width: 100%;
-    }
-}
 
 .extra-item {
     display: flex;
@@ -114,4 +105,19 @@
     font-size: 1rem;
     color: #5D4037;
     font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    .date__container .castle {
+        width: 150vw;
+    }
+
+    .date-container .year h1 {
+        width: 100%;
+    }
+
+    .date-container .month {
+        transform: translate(-30%, -7%);
+    }
 }

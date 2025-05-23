@@ -78,13 +78,14 @@ function Parchment() {
                                 <div className="dress-code-message">
                                 {/* <p>Para mantener la magia de nuestra celebración,</p> */}
                                 <p className="dress-code-highlight"><span className="no-yellow">NO</span> vestir con <span className="yellow-text">AMARILLO</span></p>
-                                <p>Este color está reservado para nuestra quinceañera.</p>
+                                <p className='dress-code-desc'>Este color está reservado para nuestra quinceañera.</p>
                                 <div className="dress-code-icon">
                                     <div className="floating-dress-container">
                                     <img src={Dress} alt='Vestido de bella' className="prohibition-img" width={'40%'}/>
                                     <div className="prohibition-symbol"></div>
                                     </div>
                                 </div>
+                                <h1 className='dress-code-def'>Semiformal</h1>
                                 </div>
                             </div>
                             </div>

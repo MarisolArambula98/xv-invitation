@@ -17,11 +17,11 @@
 }
 
 .parchment.opened .parchment__main {
-    opacity: 1;
-    overflow: hidden;
-    display: block;
-    animation-delay: 1s;
-    animation: parchment-opened 1s ease-in-out;
+  opacity: 1;
+  overflow: hidden;
+  display: block;
+  animation-delay: 1s;
+  animation: parchment-opened 1s ease-in-out;
 }
 
 .parchment__main {
@@ -33,9 +33,9 @@
 
 }
 
-.parchment__content{
-    position: relative;
-    overflow: hidden;
+.parchment__content {
+  position: relative;
+  overflow: hidden;
 }
 
 .parchment__content:before {
@@ -52,14 +52,14 @@
   z-index: 1;
 }
 
-.letter-section.invitation-title .decor-roses{
+.letter-section.invitation-title .decor-roses {
   width: 15vw;
-    position: absolute;
-    top: 69%;
-    left: 36%;
-    filter: brightness(1);
-    z-index: 4;
-    transform: rotate(-45deg);
+  position: absolute;
+  top: 69%;
+  left: 36%;
+  filter: brightness(1);
+  z-index: 4;
+  transform: rotate(-45deg);
 }
 
 .parchment.opened .parchment__head {
@@ -67,7 +67,7 @@
 }
 
 #Banner {
-    width: 68vw;
+  width: 68vw;
 }
 
 h1 {
@@ -76,76 +76,86 @@ h1 {
 }
 
 .parchment .date-section {
-    margin: 0rem 0 2rem;
+  margin: 0rem 0 2rem;
 }
 
 .parchment .letter-section {
-    width: 50%;
-    margin: 3rem auto;
-    /* display: flex;
+  width: 50%;
+  margin: 3rem auto;
+  /* display: flex;
     align-items: center;
     justify-content: center; */
 }
 
-.parchment .letter-section > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative
+.parchment .letter-section>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative
 }
 
 .parchment .letter-section img {
-    /* width: 30vw; */
-    /* margin-right: -1.5vw; */
-    /* max-width: 150px; */
-    left: 0;
-    filter: brightness(0.5);
-    position: absolute;
+  /* width: 30vw; */
+  /* margin-right: -1.5vw; */
+  /* max-width: 150px; */
+  left: 0;
+  filter: brightness(0.5);
+  position: absolute;
 }
 
 .parchment .letter-section svg {
-    width: 100%;
-    height: auto;
-    padding-left: 120px;
-    padding-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  padding-left: 120px;
+  padding-bottom: 1rem;
 }
 
-.parchment .letter-section > div:first-child svg {
-    padding-left: 130px;
+.parchment .letter-section>div:first-child svg {
+  padding-left: 130px;
 }
 
 .parchment .letter-section path {
-    stroke: #442509;
-    fill: #442509;
+  stroke: #442509;
+  fill: #442509;
 }
 
 .parchment .letter-section span {
-    color: black;
+  color: black;
 }
 
 @keyframes parchment-opened {
   0% {
-      opacity: 0;
-  } 100% {
-      opacity: 1;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
 @keyframes parchment-animation {
   0% {
-      min-height: 135px;
-      transform: rotate(90deg) scale(0.35);
-  } 10% {
-      transform: rotate(90deg) scale(0.35);
-  } 50% {
-      transform: rotate(0deg) scale(0.5);
-  } 55% {
-      transform: scale(0.5);
-  } 100% {
-      transform: scale(1);
-      min-height: calc(100vh + 160px);
+    min-height: 135px;
+    transform: rotate(90deg) scale(0.35);
   }
-  
+
+  10% {
+    transform: rotate(90deg) scale(0.35);
+  }
+
+  50% {
+    transform: rotate(0deg) scale(0.5);
+  }
+
+  55% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+    min-height: calc(100vh + 160px);
+  }
+
 }
 
 /* Add these styles to your existing Parchment.css file */
@@ -176,7 +186,8 @@ h1 {
   box-shadow: 0 0 10px rgba(139, 69, 19, 0.3);
   border-radius: 8px;
   overflow: hidden;
-  min-height: 100vh; /* Ensure it covers the full viewport height */
+  min-height: 100vh;
+  /* Ensure it covers the full viewport height */
 }
 
 .parchment__main::before {
@@ -187,7 +198,7 @@ h1 {
   right: 0;
   bottom: 0;
   pointer-events: none;
-  background-image: 
+  background-image:
     /* Top left corner ornament */
     radial-gradient(circle at 0 0, transparent 20px, rgba(139, 69, 19, 0.1) 20px, rgba(139, 69, 19, 0.1) 22px, transparent 22px),
     /* Top right corner ornament */
@@ -262,10 +273,11 @@ h1 {
 }
 
 /* Make sure content stays above the decorative elements */
-.parchment__main > *:not(.parchment-corner):not(.parchment-texture) {
+.parchment__main>*:not(.parchment-corner):not(.parchment-texture) {
   position: relative;
   z-index: 5;
 }
+
 /* Make sure this is after your @import statements at the top */
 
 /* Enhanced invitation header styling */
@@ -288,6 +300,7 @@ h1 {
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
   transition: transform 0.5s ease;
 }
+
 .beast-image {
   position: absolute;
   width: 33vw;
@@ -362,12 +375,13 @@ h1 {
     font-size: 1.5rem;
     padding: 0 1rem;
   }
-  
+
   .invitation-title::before,
   .invitation-title::after {
     font-size: 1.2rem;
   }
 }
+
 /* Banner styling - make it more prominent */
 #Banner {
   max-width: 80%;
@@ -420,14 +434,14 @@ h1::after {
 }
 
 /* Style the container that holds the AnimatedText */
-h1 + div {
+h1+div {
   margin-top: 1.5rem;
   position: relative;
   text-align: center;
 }
 
 /* Add a decorative background behind the animated text */
-h1 + div::before {
+h1+div::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -454,7 +468,7 @@ h1 + div::before {
   #Banner {
     max-width: 95%;
   }
-  
+
   h1 {
     font-size: 1.4rem;
     max-width: 90%;
@@ -530,9 +544,14 @@ h1 + div::before {
 .yellow-text {
   color: #B71C1C;
   font-weight: bold;
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
   text-decoration-color: #B71C1C;
   text-decoration-thickness: 2px;
+}
+
+.dess-code-desc {
+  font-family: 'Great Vibes';
+  font-size: 1.5rem;
 }
 
 .dress-code-icon {
@@ -566,7 +585,7 @@ h1 + div::before {
 .dress-code-title {
   font-size: 2.5rem;
   color: #8B4513;
-  margin-bottom: 15px;
+  margin: 2rem auto 1rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -605,15 +624,28 @@ h1 + div::before {
 .yellow-text {
   color: #B71C1C;
   font-weight: bold;
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
   text-decoration-color: #B71C1C;
-  text-decoration-thickness: 2px;
+  /* text-decoration-thickness: 2px; */
 }
 
 .dress-code-icon {
   margin-top: 20px;
   position: relative;
   display: inline-block;
+}
+
+.dress-code-desc {
+  font-size: 1.5rem;
+  font-family: 'Great Vibes';
+}
+
+.dress-code-def {
+  margin: 1rem auto;
+  font-size: 2rem;
+  width: fit-content;
+  font-family: 'Great Vibes';
+  color: var(--midnight-blue);
 }
 
 .floating-dress-container {
@@ -676,25 +708,32 @@ h1 + div::before {
   0% {
     transform: translateY(0) rotate(0deg);
   }
+
   25% {
     transform: translateY(-10px) rotate(15deg);
   }
+
   50% {
     transform: translateY(0) rotate(0deg);
   }
+
   75% {
     transform: translateY(10px) rotate(-15deg);
   }
+
   100% {
     transform: translateY(0) rotate(0deg);
   }
 }
 
 @keyframes sparkle {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0;
     transform: scale(0.5);
   }
+
   50% {
     opacity: 1;
     transform: scale(1.2);
@@ -705,11 +744,11 @@ h1 + div::before {
   .floating-dress-container {
     width: 60%;
   }
-  
+
   .dress-code-title {
     font-size: 2rem;
   }
-  
+
   .dress-code-message {
     font-size: 1rem;
   }
@@ -719,8 +758,8 @@ h1 + div::before {
   .floating-dress-container {
     width: 80%;
   }
-  
+
   .dress-code-title {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 }

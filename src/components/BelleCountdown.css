@@ -49,7 +49,9 @@
   transition: transform 1s ease, opacity 1s ease;
   z-index: 1;
   /* clip-path: polygon(8% 0, 92% 0, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0 92%, 0 8%); */
-   border-bottom: solid 2px var(--belle-gold);
+   border: solid 2px var(--belle-gold);
+   border-left: unset;
+   border-right: unset;
 }
 .belle-countdown-container .splitter{
   position: absolute;
