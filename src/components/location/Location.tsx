@@ -3,6 +3,11 @@ import './Location.css';
 import Beast from '../../assets/beast.png';
 
 const Location: React.FC = () => {
+
+  function goTo() {
+    window.open("http://maps.google.com/maps?daddr=31.677161957592393,-106.4292112372487&amp;ll=", '_blank');
+  }
+
   return (
     <div className="location__container">
         <div className="map__container">
@@ -12,6 +17,7 @@ const Location: React.FC = () => {
               <h2 className="magic-text">Ubicaci&oacute;n</h2>
               <h3>Terraza Caeli</h3>
               <h4>Sierra Coste&ntilde;a y calle Sierra Blanca #5404</h4>
+              <button onClick={goTo} type='button'>C&oacute;mo llegar</button>
             </div>
             <div className="location__mask">
             </div>
