@@ -89,7 +89,7 @@ const ParallaxSection = () => {
               <div className="title-inner">
                 <h2>Un Cuento de Hadas</h2>
                 <div className="title-divider"></div>
-                <p>Los momentos m&aacute;s felices y divertidos de la vida se pasan mejor en compa&ntilde;&iacute;a por eso celebremos juntos en este d&iacute;a</p>
+                <p>Los momentos m&aacute;s felices y divertidos de la vida se pasan mejor en compa&ntilde;&iacute;a, por eso celebremos juntos en este d&iacute;a</p>
                 <div className="parallax-quote">
                   <p>"Tale as old as time, song as old as rhyme..."</p>
                 </div>
