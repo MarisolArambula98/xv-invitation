@@ -5,6 +5,8 @@ import Castle from '../../assets/castle.png';
 import cutlery from '../../assets/cutlery (1).png'
 import baile from '../../assets/baile.png'
 import Beast from '../../assets/bella_beast.png';
+import Pool from '../../assets/traje.png'
+import Buzon from '../../assets/buzon.png'
 
 
 const eventDetails = {
@@ -50,14 +52,32 @@ const Date: React.FC = () => {
                             <div className="detail-item">
                                 <span className="detail-text">{eventDetails.time}</span>
                             </div>
+                     
+
                         </div>
                     
                     </div>
+                    
                 </div>
             </div>
             <div className='year'>
                 <h1>2025</h1>
             </div>
+                                   <div className="extra-item">
+                                <h1 className='title'>Ademas</h1>
+                                <div className="details-container">
+                                    <div className="pool-details">
+                                        <span className="detail-text">Alberca</span> 
+                                        <img src={Pool} alt="" width={"40%"}/>
+                                    </div>
+                                    <div className="mailbox-details">
+                                        <span className="detail-text">Buzon</span>
+                                        <img src={Buzon} alt="Buzón de deseos" width={"40%"}/>
+                                    </div>
+                                </div>
+                                
+                                {/* <div className="vestimenta"></div> */}
+                            </div>
         </div>
     );
 };

@@ -3,6 +3,7 @@ import ParchmentHead from '../parchment-head/ParchmentHead';
 import './Parchment.css'
 import Layout from '../../pages/layout/main';
 import Banner from '../../assets/BannerInvitacion.png';
+import Dress from '../../assets/bella-dress.png';
 import BelleCountdown from '../BelleCountdown'
 import AnimatedText from '../animated-text/AnimatedText';
 import Location from '../location/Location';
@@ -67,6 +68,30 @@ function Parchment() {
                             <div className="date-section">
                                 <DateSection />
                             </div>
+
+                            <div className="dress-code-section">
+                            <div className="dress-code-container">
+                                <div className="dress-code-title alex-brush-regular">Código de Vestimenta</div>
+                                <div className="dress-code-divider">
+                                <span className="divider-rose">🌹</span>
+                                </div>
+                                <div className="dress-code-message">
+                                {/* <p>Para mantener la magia de nuestra celebración,</p> */}
+                                <p className="dress-code-highlight"><span className="no-yellow">NO</span> vestir con <span className="yellow-text">AMARILLO</span></p>
+                                <p>Este color está reservado para nuestra quinceañera.</p>
+                                <div className="dress-code-icon">
+                                    <div className="floating-dress-container">
+                                    <img src={Dress} alt='Vestido de bella' className="prohibition-img" width={'40%'}/>
+                                    <div className="prohibition-symbol"></div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+
+                            <div className="belle-countdown-section"></div>
+
 
                             <div className="belle-countdown-section">
                                 <BelleCountdown targetDate={celebrationDate} />

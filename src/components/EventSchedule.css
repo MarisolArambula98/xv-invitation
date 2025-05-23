@@ -70,7 +70,7 @@
     border-radius: 15px;
     padding: 20px 0px;
     /* box-shadow: 0 10px 25px rgba(139, 69, 19, 0.15); */
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     /* border: 1px solid rgba(212, 175, 55, 0.3); */
     /* transform: translateY(50px); */
     opacity: 0;
@@ -253,7 +253,7 @@
     
     .event-card {
       width: 100%;
-      /* margin: 0; */
+      margin: 0;
     }
 
     .event-date-time {
