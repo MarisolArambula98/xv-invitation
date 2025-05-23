@@ -462,7 +462,7 @@ h1 + div::before {
 }
 
 
-/* Dress Code Section Styles
+/* Dress Code Section Styles */
 .dress-code-section {
   position: relative;
   overflow: hidden;
@@ -723,4 +723,4 @@ h1 + div::before {
   .dress-code-title {
     font-size: 1.8rem;
   }
-} */
+}
