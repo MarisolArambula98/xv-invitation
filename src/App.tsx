@@ -8,7 +8,8 @@ function App() {
 
   return (
     <>
-      <>
+    <>
+    <audio src="/assets/audio.mp3" autoPlay loop />
         test
       </>
       <div className="parchment__container">
